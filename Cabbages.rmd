@@ -55,7 +55,7 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-Cultivation C39 has a vitamin C content of about 51 and cultivation C52 has a vitamin C content of about 64
+Cultivation C39 has a vitamin C content of about 52 and cultivation C52 has a vitamin C content of about 64
 
 ### Numerical Descriptive Results
 
@@ -65,7 +65,7 @@ Cultivation C39 has a vitamin C content of about 51 and cultivation C52 has a vi
 favstats(VitC~Cult,data=veggy)
 ```
 
-The cabbages grown with method c39 have a lower average of 51.55 vitamin c levels and the cabbages grown with method c52 have higher average vitamin c levels at 64.4
+The cabbages grown with method c39 have a lower average of 51.55 vitamin c levels and the cabbages grown with method c52 have higher average vitamin c levels at 64.4.
 ## Inferential Results
 
 
@@ -74,10 +74,10 @@ The cabbages grown with method c39 have a lower average of 51.55 vitamin c level
 ```{r}
 t.test(VitC~Cult,data=veggy)
 ```
-The p-value is 0.00000003405. The p vallue is very small. 
+The p-value is 0.00000003405. The p value is very small and shows that the null hypothesis is true. That number is so small I reject the null hypothesis.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-I reject the null hypothesis. Cabbages cultivated with c52 have more vitamin C.
+I reject the null hypothesis. Cabbages cultivated with c52 have more vitamin C than cabbages cultivated with C39.
